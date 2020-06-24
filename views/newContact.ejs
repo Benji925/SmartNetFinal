@@ -1,0 +1,47 @@
+<div class="container" style="color: black">
+    <% if (loggedIn) { %>
+    <h2 style ="color: white">Meet someone new? Add their info here!</h2>
+    <div>
+
+    <div class='form' id='addit'>
+        <form method = "Post" action = "/contact" >
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label class = 'notbold'; htmlFor="firstName"; style ="color: white">First Name</label>
+                    <input type="text" class="form-control" name="firstName"/>
+                    <label class = 'notbold'; htmlFor="lastName"; style ="color: white">Last Name</label>
+                    <input type="text" class="form-control" name="lastName"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class = 'notbold'; htmlFor="company"; style ="color: white">Company</label>
+                <input type="text" class="form-control" name="company" placeholder="i.e. Google"/>
+            </div>
+            <div class="form-group">
+                <label class = 'notbold'; htmlFor="meetingLocation"; style ="color: white">Meeting Location</label>
+                <input type="text" class="form-control" name="meetingLocation"
+                       placeholder="Linkedin, Networking event, etc."/>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class = 'notbold'; htmlFor="contactWhen"; style ="color: white">When should you reach out next?</label>
+                    <input type="date" class="form-control" name="contactWhen"/>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class = 'notbold'; htmlFor="email"; style ="color: white">Email</label>
+                    <input type="email" class="form-control" name="email"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class = 'notbold'; htmlFor="notes"; style ="color: white">Other Notes</label>
+                <textarea type="text" class="form-control"; name="otherNotes" style ="height: calc (2.5em +4.75rem + 2px);"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Contact</button>
+
+        </form>
+    </div>
+    </div>
+    <% } else { %>
+        <h1>Log in to add a new contact!</h1>
+    <% } %>
+</div>

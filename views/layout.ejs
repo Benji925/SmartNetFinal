@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1">
+	<title>Smartnet</title>
+	<link rel="shortcut icon" type="image/png" href="/images/icon.png" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/main.css">
+<body style = "color: black">
+	<div id="nav">
+		<div class="container2">
+  		<div class="one">
+				<h1 id="title" style= "font-size: 3.5vmin"> &ensp; Smartnet</h1>
+			</div>
+  		<div class="two">
+			<% if (!loggedIn) {%>
+				<a href="/login">
+					<span class="button2">&ensp;&ensp;Login</span>
+				</a>
+				<% } else  { %>
+					<p style="color:white;display:inline;font-size: 1vw"><%= user.googleemail %></p>
+				<a href="/profile">
+					<span class="button2" style="font-size: 1vw">&ensp;&ensp;Profile</span>
+				</a>
+				<a href="/logout">
+					<span class="button3" style="font-size: 1vw">&ensp;&ensp;Logout</span>
+				</a>
+				<% } %>
+
+			</div>
+		</div>
+		<div class="col-sm nav-align">
+			<a href="/">
+				<span class="button">Home</span>
+			</a>
+			<a href="/newContact">
+				<span class="button">Add Contact</span>
+			</a>
+			<a href="/showContacts">
+				<span class="button">See Contacts</span>
+			</a>
+			<a href="/contact">
+				<span class="button">Calendar</span>
+			</a>
+			<a href="/about">
+				<span class="button">About</span>
+			</a>
+				<span class="button4" onclick="myFunction()">&ensp;</span>
+				<script>
+					function myFunction() {
+					   var element = document.body;
+					   element.classList.toggle("dark-mode");
+					}
+				</script>
+			</a>
+		</div>
+	</div>
+
+	<%- body %>
+
+</body>
+</html>

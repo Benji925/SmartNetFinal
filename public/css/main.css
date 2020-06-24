@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+
+body {
+  margin: 0;
+  padding-top: 170px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(186,182,183);
+  color: black;
+}
+.dark-mode{
+  background-color :#00000a:
+  color: white;
+}
+#nav {
+  width: 100%;
+  height: 130px;
+  padding: 20px 0 5px 0;
+  border-bottom: solid 1\px #1a003a;
+  box-shadow: 0px 20px 30px #1a001a;
+  position: absolute;
+  color:black;
+  top: 0;
+  background-image: url("/images/network.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+#title {
+  color:white;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;;
+  text-transform: uppercase;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+  width: 100%;
+}
+a {
+  color: #91caf9;
+  text-decoration: none;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+.nav-align {
+  text-align: left;
+  padding: 3px 0;
+}
+.nav-align2 {
+  text-align: right;
+  padding: 3px 0;
+}
+
+.container {
+  padding: 0% 10%;
+}
+
+.button {
+  background-color: #00000a;
+  padding: 0.3vw 5vw;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+.button2 {
+  background: url("/images/login.png") no-repeat;
+  background-size: contain;
+  background-color: #00000a;
+  padding: 0.2vw 2vw;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+.button3 {
+  background: url("/images/logout.png") no-repeat;
+  background-size: contain;
+  background-color: #00000a;
+  padding: 0.2vw 2vw;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+.button4 {
+  background: url("/images/darkmode.png") no-repeat;
+  background-size: contain;
+  background-color: #00000a;
+  padding: 0.3vw 1vw;
+  border-radius: 1px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+.button5 {
+  background: url("/images/lightmode.png") no-repeat;
+  background-size: contain;
+  background-color: #00000a;
+  padding: 0.2vw 2vw;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #4b0082;
+  color: #white;
+}
+.button2:hover {
+  background-color: #2d004d;
+  color: #white;
+}
+.button3:hover {
+  background-color: #2d004d;
+  color: #white;
+}
+.container2 {
+  width: 100%;
+  height: 75px;
+  margin: auto;
+  padding: 20px;
+}
+
+.one {
+  width: 100%;
+  height: 5px;
+  float: left;
+}
+.two {
+  height: 10px;
+  float: right;
+}
+.notbold{
+    font-weight:normal
+}​
+img.one {
+  height: 200px;
+  width: 200px;
+}
+
+#input {
+  color: darkblue;
+}
+
+#logo { height: 200px; width: 200px; overflow: hidden; }
+
+ .card-body{
+   background-color: #f7f0f7;
+   color: #423e42;
+   font-family: "Quicksand", sans-serif;
+ }
+
+ .card-footer{
+   background-color: #e6d8e6;
+   font-family: "Quicksand", sans-serif;
+   color: #423e42;
+ }
