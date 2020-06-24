@@ -12,7 +12,8 @@ const express = require("express"),
 
   const mongoose = require("mongoose");
   mongoose.connect(
-     'mongodb://localhost/smartNet',
+     //'mongodb://localhost/smartNet',
+     process.env.MONGODB_URI,
      {useNewUrlParser:true})
   const db = mongoose.connection;
   db.on('error',(x)=>console.log("connection error"+x))
