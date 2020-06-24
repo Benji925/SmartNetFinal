@@ -41,7 +41,7 @@ app.get("/showContacts", homeController.showContacts);
 app.get("/about", homeController.about);
 app.post("/about", homeController.about);
 
-
+console.log("testing!")
 app.get('/profiles',
     isLoggedIn,
     async (req,res,next) => {
