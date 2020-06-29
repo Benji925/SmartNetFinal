@@ -5,6 +5,7 @@ const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const contactSchema = Schema( {
   userId: ObjectId,
+  ownerEmail: String,
   firstName: String,
   lastName: String,
   email: String,
@@ -14,4 +15,4 @@ const contactSchema = Schema( {
   otherNotes: String
 });
 
-module.exports = mongoose.model('Contact',contactSchema);
+module.exports = mongoose.model('ContactT1',contactSchema);

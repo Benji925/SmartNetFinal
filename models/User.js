@@ -13,4 +13,4 @@ var userSchema = Schema( {
   username:String,
 } );
 
-module.exports = mongoose.model( 'User', userSchema );
+module.exports = mongoose.model( 'UserT1', userSchema );

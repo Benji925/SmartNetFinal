@@ -42,7 +42,6 @@ exports.postedSignUpForm = async (req, res) => {
     let formData = req.body
     let newContact = new Contact(
       {
-
         userId: req.user._id,
         firstName: req.body.firstName,
         lastName: req.body.lastName,

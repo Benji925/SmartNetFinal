@@ -1,0 +1,33 @@
+<h2>show all</h2>
+<form method="post" action="/allContactsMobile">
+    <input type="text" name="email" value="<%=user.googleemail%>">
+    <input type="text" name="secret" value="<%=user._id%>">
+    <input type="submit">
+
+</form>
+<h2>add contact</h2>
+<form method="post" action="/addContactMobile">
+    <input type="text" name="email" value="<%=user.googleemail%>">
+    <input type="text" name="secret" value="<%=user._id%>">
+    <input type="text" name="contact" value="<%=JSON.stringify(contact)%>">
+    <input type="submit">
+
+</form>
+<h2>replace contact (ish)</h2>
+<form method="post" action="/replaceContactMobile">
+    <input type="text" name="email" value="<%=user.googleemail%>">
+    <input type="text" name="secret" value="<%=user._id%>">
+    <input type="text" name="contact" value="<%=JSON.stringify(contact)%>">
+    <input type="submit">
+
+</form>
+<h2>delete contact</h2>
+<form method="post" action="/deleteContactMobile">
+    <input type="text" name="email" value="<%=user.googleemail%>">
+    <input type="text" name="secret" value="<%=user._id%>">
+    <input type="text" name="contact" value="<%=JSON.stringify(contact)%>">
+    <input type="submit">
+
+</form>
+<pre><%= JSON.stringify(contact,null,2)%>
+</pre>
