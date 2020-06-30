@@ -91,26 +91,6 @@ a {
   display: inline-block;
   color: #fff;
 }
-.button4 {
-  background: url("/images/darkmode.png") no-repeat;
-  background-size: contain;
-  background-color: #00000a;
-  padding: 0.3vw 1vw;
-  border-radius: 1px;
-  cursor: pointer;
-  display: inline-block;
-  color: #fff;
-}
-.button5 {
-  background: url("/images/lightmode.png") no-repeat;
-  background-size: contain;
-  background-color: #00000a;
-  padding: 0.2vw 2vw;
-  border-radius: 2px;
-  cursor: pointer;
-  display: inline-block;
-  color: #fff;
-}
 
 .button:hover {
   background-color: #4b0082;

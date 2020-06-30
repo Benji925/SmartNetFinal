@@ -4,6 +4,8 @@
         and from the info you provide when you
         edit this page!
     </p>
+  <div class="jumbotron">
+    <h1> <%= user.googlename %>'s Profile</h1>
   </div>
   <hr>
   <a href="editProfile">Edit</a>
@@ -17,10 +19,12 @@
           <tbody>
             <tr>
               <td>googlename</td>
+              <td>Google Name</td>
               <td><%= user.googlename %> </td>
             </tr>
             <tr>
               <td>googleemail</td>
+              <td>Google Email</td>
               <td><%= user.googleemail %> </td>
             </tr>
             <tr>
@@ -34,7 +38,3 @@
           </tbody>
         </table>
     </div>
-    <div class="col-sm-4">
-    </div>
-  
-  </div>

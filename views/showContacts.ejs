@@ -1,19 +1,23 @@
 <% contacts.forEach(contact => { %>
-<div class="card" style="margin-left: 19%; margin-right: 19%; margin-bottom: 4%; border-style: solid; background-color: rgb(186,182,183); padding: .2%;">
+<div class="card" style="margin-left: 19%; margin-right: 19%; margin-bottom: 4%; border-style: none; background-color: rgb(186,182,183); padding: .2%;">
   <div class="card-body"style="text-align: center;">
-    
+
     <h2 class="card-title"><%= contact.lastName %>, <%= contact.firstName %></h2>
     <hr style= "border-top: 2px solid black"; width="50%">
     <p class="card-text" style="padding:.5%; font-size:130%">
-    Company: <%= contact.company %> 
+    <b style="color: #6d6d6d;">Company:</b> <%= contact.company %>
     <br>
-    Email: <%= contact.email %>
+    <b style="color: #6d6d6d;">Email: </b><a href ="mailto: <%= contact.email %>"> <%= contact.email %></a>
     <br>
-    Meeting Location: <%= contact.meetingLocation %>
+    <b style="color: #6d6d6d;">Meeting Location:</b> <%= contact.meetingLocation %>
     <br>
-    Other Notes: <%= contact.otherNotes %>
+    <b style="color: #6d6d6d;">Other Notes:</b> <%= contact.otherNotes %>
     </p>
+    <a href="delete/<%=contact._id%>" style= "border-style: none; padding-top: 1%; background-color: #f7f0f7; margin-left: 40%; margin-right: 40%; ">
+      <p style="color: #6d6d6d;">Delete Contact <img src="../images/trashCan.png" style="width: 3%;"></p>
+    </a>
   </div>
+
 </div>
 <% }); %>
     
