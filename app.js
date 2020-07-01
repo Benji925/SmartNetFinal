@@ -141,22 +141,18 @@ app.get('/mobileTest',
 app.post('/addContactMobile',
     async (req,res,next) => {
         try {
-            console.log('request received');
             let email=req.body.email;
             let secret=req.body.secret;
             //could use something like deviceID as the secret to keep high security
             let user = await User.findOne({googleemail:email});
-            console.log(req.body.contact);
             let c=(req.body.contact);
             c.contactWhen=new Date();
             c.userId=user._id;
             delete c._id;
             let newContact=new Contact(c);
-            console.log(JSON.stringify(c,null,2))
             //create a new contact using the information that is passed in
             await newContact.save();
             let contacts = await Contact.find({userId:user._id});
-            console.log('returning data');
             res.json(contacts)
             //give user updated list with changes
         } catch (error) {
