@@ -1,29 +1,18 @@
-<div class="jumbotron">
-    <h1>Your Profile</h1>
-    <p> this comes from the google authentication
-        and from the info you provide when you
-        edit this page!
-    </p>
+
+
   <div class="jumbotron">
     <h1> <%= user.googlename %>'s Profile</h1>
   </div>
-  <hr>
-  <a href="editProfile">Edit</a>
-  <hr>
   <div class="row">
-    <div class="col-sm-4">
-      <img src="<%= user.imageURL %>" alt="image of user">
-    </div>
-    <div class="col-sm-4">
+
+    <div class="col-sm-4" style="padding: 2%;">
         <table class="table table-bordered">
           <tbody>
             <tr>
-              <td>googlename</td>
               <td>Google Name</td>
               <td><%= user.googlename %> </td>
             </tr>
             <tr>
-              <td>googleemail</td>
               <td>Google Email</td>
               <td><%= user.googleemail %> </td>
             </tr>
@@ -31,10 +20,7 @@
               <td>Number of Connections</td>
               <td><%= numContacts %> </td>
             </tr>
-            <tr>
-              <td>age</td>
-              <td><%= user.age %> </td>
-            </tr>
+
           </tbody>
         </table>
     </div>

@@ -38,8 +38,6 @@ app.get("/", (req, res) => {
 
 const ObjectId = mongoose.Types.ObjectId;
 
-app.get("/courses", homeController.showCourses);
-app.get("/contact", homeController.showSignUp);
 app.post("/contact", homeController.postedSignUpForm);
 app.get("/newContact", homeController.showNewContact);
 app.get("/showContacts", homeController.showContacts);
